@@ -13,6 +13,8 @@
     <maven.compiler.target>17</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <version.spring>6.0.4</version.spring>
+    <version.hibernate>5.6.1.Final</version.hibernate>
+    <version.spring.data>2.2.11.RELEASE</version.spring.data>
     <version.springdata>3.0.1</version.springdata>
     <version.mysql>8.0.29</version.mysql>
     <version.logback>1.4.5</version.logback>
@@ -47,9 +49,31 @@
       <version>${version.springdata}</version>
     </dependency>
     <dependency>
+      <groupId>org.springframework.data</groupId>
+      <artifactId>spring-data-jpa</artifactId>
+      <version>${version.spring.data}</version>
+    </dependency>
+
+    <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
       <version>${version.mysql}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-jdbc</artifactId>
+      <version>${version.spring}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>${version.hibernate}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-entitymanager</artifactId>
+      <version>${version.hibernate}</version>
     </dependency>
 
     <dependency>
@@ -71,7 +95,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.9</version>
+      <version>4.12</version>
       <scope>test</scope>
     </dependency>
 
