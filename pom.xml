@@ -17,6 +17,8 @@
     <version.spring.data>2.2.11.RELEASE</version.spring.data>
     <version.springdata>3.0.1</version.springdata>
     <version.mysql>8.0.29</version.mysql>
+    <version.slf4j>2.0.4</version.slf4j>
+    <version.jcl>1.7.36</version.jcl>
     <version.logback>1.4.5</version.logback>
     <version.junit>1.4.5</version.junit>
   </properties>
@@ -69,6 +71,12 @@
       <groupId>org.hibernate</groupId>
       <artifactId>hibernate-entitymanager</artifactId>
       <version>${version.hibernate}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>${version.slf4j}</version>
     </dependency>
 
     <dependency>
