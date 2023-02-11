@@ -1,4 +1,4 @@
-package com.wrotecode.springdata;
+package com.wrotecode.springdata.repository;
 
 import com.wrotecode.springdata.config.DbConfig;
 import com.wrotecode.springdata.entity.User;
