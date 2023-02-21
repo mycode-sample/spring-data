@@ -28,7 +28,7 @@ public class PersonRepositoryTest {
         Address address = new Address();
         address.setId(addressId);
         address.setZipCode(zipCode);
-        person.setAddressZip(address);
+        person.setAddress(address);
         addressRepository.save(address);
         Person person2 = personRepository.save(person);
         System.out.println(person2);

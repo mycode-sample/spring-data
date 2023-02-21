@@ -21,12 +21,12 @@ public class Person implements Serializable {
 
     @OneToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "address_id")
-    private Address addressZip;
+    private Address address;
 
 
     @Override
     public String toString() {
-        return "Person{" + "id=" + id + ", addressId=" + addressZip + ", address=" + '}';
+        return "Person{" + "id=" + id + ", addressId=" + address + ", address=" + '}';
     }
 
 
@@ -38,11 +38,11 @@ public class Person implements Serializable {
         return id;
     }
 
-    public Address getAddressZip() {
-        return addressZip;
+    public Address getAddress() {
+        return address;
     }
 
-    public void setAddressZip(Address addressId) {
-        this.addressZip = addressId;
+    public void setAddress(Address addressId) {
+        this.address = addressId;
     }
 }
